@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>وصل | WSL — عرض الكاروسيل</title>
+  <meta name="description" content="عرض كاروسيل احترافي لمحتوى وصل WSL.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preload" as="image" href="assets/slides/slide-01.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="amb amb-a"></div>
+    <div class="amb amb-b"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand" dir="ltr">
+      <span class="brand-mark">WSL</span>
+      <span class="brand-sep"></span>
+      <span class="brand-ar" dir="rtl">وصل</span>
+    </div>
+
+    <div class="top-actions">
+      <div class="counter" dir="ltr" aria-hidden="true">
+        <span class="counter-win"><span class="counter-col" id="counterCol"></span></span>
+        <span class="counter-slash">/</span>
+        <span class="counter-total" id="counterTotal">07</span>
+      </div>
+      <button class="icon-btn" id="playBtn" type="button" aria-label="تشغيل العرض التلقائي" aria-pressed="false" title="تشغيل تلقائي (Space)">
+        <svg class="ic ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a.8.8 0 0 0 1.2.7l10.4-6.5a.8.8 0 0 0 0-1.4L9.2 4.8A.8.8 0 0 0 8 5.5Z"/></svg>
+        <svg class="ic ic-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="5" width="4" height="14" rx="1.2"/><rect x="13.5" y="5" width="4" height="14" rx="1.2"/></svg>
+      </button>
+      <button class="icon-btn" id="fsBtn" type="button" aria-label="ملء الشاشة" title="ملء الشاشة (F)">
+        <svg class="ic ic-expand" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V5.5A1.5 1.5 0 0 1 5.5 4H9M15 4h3.5A1.5 1.5 0 0 1 20 5.5V9M20 15v3.5a1.5 1.5 0 0 1-1.5 1.5H15M9 20H5.5A1.5 1.5 0 0 1 4 18.5V15" fill="none" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="ic ic-shrink" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4v3.5A1.5 1.5 0 0 1 7.5 9H4M20 9h-3.5A1.5 1.5 0 0 1 15 7.5V4M15 20v-3.5a1.5 1.5 0 0 1 1.5-1.5H20M4 15h3.5A1.5 1.5 0 0 1 9 16.5V20" fill="none" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="stage" id="stage" role="region" aria-roledescription="carousel" aria-label="عرض شرائح وصل">
+    <div class="rail" id="rail">
+      <figure class="slide" data-i="0" role="group" aria-roledescription="شريحة" aria-label="1 من 7">
+        <div class="img-wrap"><img src="assets/slides/slide-01.jpg" width="1600" height="2000" alt="من إعلانات عصائر لسيارات بـ 8 مليون دينار — كيف تصنع بيرسونال براند تفرض روحها في السوق؟ مالك فتروش" draggable="false" fetchpriority="high"></div>
+      </figure>
+      <figure class="slide" data-i="1" role="group" aria-roledescription="شريحة" aria-label="2 من 7">
+        <div class="img-wrap"><img src="assets/slides/slide-02.jpg" width="1600" height="2000" alt="البرسونال براند: الصورة الذهنية الثابتة التي يربطها الجمهور باسمك" draggable="false"></div>
+      </figure>
+      <figure class="slide" data-i="2" role="group" aria-roledescription="شريحة" aria-label="3 من 7">
+        <div class="img-wrap"><img src="assets/slides/slide-03.jpg" width="1600" height="2000" alt="المرحلة صفر: دراسة الشخصية" draggable="false"></div>
+      </figure>
+      <figure class="slide" data-i="3" role="group" aria-roledescription="شريحة" aria-label="4 من 7">
+        <div class="img-wrap"><img src="assets/slides/slide-04.jpg" width="1600" height="2000" alt="المرحلة الأولى: هندسة شد الإنتباه" draggable="false"></div>
+      </figure>
+      <figure class="slide" data-i="4" role="group" aria-roledescription="شريحة" aria-label="5 من 7">
+        <div class="img-wrap"><img src="assets/slides/slide-05.jpg" width="1600" height="2000" alt="المرحلة الثانية: الشغل البطل" draggable="false"></div>
+      </figure>
+      <figure class="slide" data-i="5" role="group" aria-roledescription="شريحة" aria-label="6 من 7">
+        <div class="img-wrap"><img src="assets/slides/slide-06.jpg" width="1600" height="2000" alt="المرحلة الثالثة: رقم واحد فالسوق" draggable="false"></div>
+      </figure>
+      <figure class="slide" data-i="6" role="group" aria-roledescription="شريحة" aria-label="7 من 7">
+        <div class="img-wrap"><img src="assets/slides/slide-07.jpg" width="1600" height="2000" alt="القصة مش على مالك فتروش بس، القصة على طريقة تفكيرنا كوصل" draggable="false"></div>
+      </figure>
+    </div>
+
+    <button class="nav nav-prev" id="prevBtn" type="button" aria-label="الشريحة السابقة">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav nav-next" id="nextBtn" type="button" aria-label="الشريحة التالية">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </main>
+
+  <footer class="dock" id="dock">
+    <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+    <nav class="thumbs" id="thumbs" aria-label="التنقل بين الشرائح">
+      <button type="button" data-i="0" aria-label="الشريحة 1"><img src="assets/thumbs/thumb-01.jpg" alt="" draggable="false"></button>
+      <button type="button" data-i="1" aria-label="الشريحة 2"><img src="assets/thumbs/thumb-02.jpg" alt="" draggable="false"></button>
+      <button type="button" data-i="2" aria-label="الشريحة 3"><img src="assets/thumbs/thumb-03.jpg" alt="" draggable="false"></button>
+      <button type="button" data-i="3" aria-label="الشريحة 4"><img src="assets/thumbs/thumb-04.jpg" alt="" draggable="false"></button>
+      <button type="button" data-i="4" aria-label="الشريحة 5"><img src="assets/thumbs/thumb-05.jpg" alt="" draggable="false"></button>
+      <button type="button" data-i="5" aria-label="الشريحة 6"><img src="assets/thumbs/thumb-06.jpg" alt="" draggable="false"></button>
+      <button type="button" data-i="6" aria-label="الشريحة 7"><img src="assets/thumbs/thumb-07.jpg" alt="" draggable="false"></button>
+    </nav>
+  </footer>
+
+  <p class="sr-only" id="live" aria-live="polite"></p>
+  <noscript><style>.slide{position:static!important;margin:16px auto;opacity:1!important;transform:none!important}.rail{height:auto!important;width:min(520px,92vw)!important}body{overflow:auto!important;height:auto!important}</style></noscript>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
